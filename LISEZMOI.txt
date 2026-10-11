@@ -1,0 +1,21 @@
+PORTFOLIO – MODE D'EMPLOI
+=========================
+1) Ouvrir index.html pour voir le portfolio. Les exemples (images SVG) sont dans img/.
+2) Gérer les projets : ajoutez  ?admin  à l'adresse (index.html?admin) puis cliquez sur « ✎ Gérer les projets ».
+   Vous pouvez ajouter / modifier / supprimer des projets et des photos (photo principale, miniatures, plan, galerie).
+
+EN LIGNE AVEC PHP (recommandé – tout est publié immédiatement)
+- Envoyez tout le contenu du zip sur votre hébergement.
+- Ouvrez api.php et CHANGEZ le mot de passe (const PASSWORD).
+- Vérifiez que les dossiers data/ et uploads/ sont inscriptibles.
+- Allez sur https://votre-site/?admin, cliquez sur « Gérer les projets » : le mot de passe est demandé à CHAQUE ouverture,
+  et la session est fermée quand vous fermez la fenêtre.
+
+HÉBERGEMENT STATIQUE (sans PHP) ou usage local
+- Un mot de passe est aussi demandé : changez LOCAL_PASSWORD au début de script.js.
+- Les modifications sont gardées en brouillon dans votre navigateur.
+- Cliquez sur « Exporter (projects.js) » puis remplacez le fichier data/projects.js sur l'hébergement.
+- Les visiteurs ne voient jamais le bouton de gestion (il n'apparaît qu'avec ?admin).
+Pour changer les images des autres pages (couverture, à propos, galerie…) : remplacez les fichiers img/hero.svg, about.svg, g1.svg… par vos photos (même nom, ou modifiez PAGE_IMG dans script.js).
+
+ANIMATIONS : style.css (design), animations.css + animations.js (mouvements). Pour les désactiver, retirez les 2 lignes animations dans index.html.
